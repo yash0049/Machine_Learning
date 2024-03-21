@@ -11,6 +11,8 @@ iris = datasets.load_iris()
 X = iris.data
 y = iris.target
 
+classes = ['Iris Setosa', 'Iris Versicolour', 'Iris Virginica']
+
 # pyplot.plot(X,y)
 # print(X.shape)
 # print(y.shape)
@@ -35,3 +37,6 @@ Accuracy = accuracy_score(y_test,Prediction)
 
 print("Prediction: ",Prediction)
 print("Accuracy: ", Accuracy)
+
+for i in range(len(Prediction)):
+    print(classes[Prediction[i]])
