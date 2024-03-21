@@ -48,3 +48,7 @@ Accuracy = metrics.accuracy_score(y_test, Prediction)
 
 print('Prediction: ',Prediction)
 print('Accuracy: ' , Accuracy)
+
+a=32
+print("Actual Value", y[a])
+print("Predicted Value:", Knn.predict(X)[a])
